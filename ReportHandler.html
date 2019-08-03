@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+		<link rel="stylesheet" href="../static/noticecomment.css">
+	<link rel="stylesheet" href="../static/Bootstrap/bootstrap.min.css" >
+	<link rel="stylesheet" href="../static/Bootstrap.edit.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	
+	<script>
+		$(document).ready(function() {
+
+			$( ".navbar-nav .nav-item" ).on("click", function() {
+				$( ".navbar-nav .nav-item" ).removeClass( "active" );
+				$(this).addClass( "active" );
+			});
+
+
+		});
+	</script>
+	
+</head>
+<body>
+<div class="nav-scroller">
+		{% include "nav.html"%}
+	</div>
+	
+		{% if success_msg %}
+                <div class="alert alert-success">{{ success_msg }}</div>
+        {% endif %}
+	
+	<div class="container ">
+		
+		<div class="row mb-2">
+			<div>
+							<div class="container px-0">
+								
+							</div>
+            
+
+                                 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+
+													<div class="container">
+	
+														<h2 class="text-center">News Feed</h2>
+	
+														<div class="card">
+	    													<div class="card-body">
+
+	      														  <div class="row">
+      
+  	    																<div class="col-md-2">
+        	    
+    																	<img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid"/>
+
+          																	 <p class="text-secondary text-center">Ram prasad</p>
+
+ 	       																	 <p class="text-secondary text-center">Reg.No:8855</p>
+ 	                	    											</div>
+        	    													<div class="col-md-10">
+        	   																			
+     																	<p>
+        	   														         <a class="float-left" href="#notice">
+																				<strong>Students Greivences</strong>
+																				</a>
+        	        
+    																			
+        
+	      																 </p>
+        	
+       																<div class="clearfix"></div>
+      
+  	      															 <div class="form-group shadow-textarea">
+  																		
+  																		</div>
+        	
+        															<p><a href="#Notice"><strong>Ram Prasad</strong></a></p>
+                    	        <p>Rose are red violets are blue i love u i miss u!!! @#$@#$%#$%^$%^
+  	      															@#$#$##%#$5
+  	      															#%#$%#$%#$%........................
+  	      															@#$#%#$%ET%#$%$% </p>
+                    	            <a class="float-right btn text-white btn-danger"></i> Action </a>
+                    	            <a class="float-right btn text-white btn-danger"></i> Delete Post </a>
+                    	            
+                    	       </p>
+        	    													</div>
+	        													</div>
+	        	<div class="card card-inner">
+            	    <div class="card-body">
+            	        <div class="row">
+                    	    <div class="col-md-2">
+                    	        <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid"/>
+                    	        <p class="text-secondary text-center">Hari Kumar</p>
+
+ 	       					 <p class="text-secondary text-center">ID:0123</p>
+                    	    </div>
+                    	    <div class="col-md-10">
+                    	    	<p><a class="float-left" href="#notice">
+                    	    		<strong>Students Greivences</strong></a><br>
+                    	        <a href="#notice">
+                    	        	<strong>Hari Kumar</strong></a></p>
+                    	        <p>Mind ur tongue, Dont u dare!!! @#$@#$%#$%^$%^
+  	      															@#$#$##%#$5
+  	      															#%#$%#$%#$%........................
+  	      															@#$#%#$%ET%#$%$% </p>
+                    	            <a class="float-right btn text-white btn-danger"></i> Action </a>
+                    	            <a class="float-right btn text-white btn-danger"></i> Delete Post </a>
+                    	            
+                    	       </p>
+                    	    </div>
+            	        </div>
+            	    </div>
+	            </div>
+	    </div>
+	</div>
+</div>
+</div>
+</div>
+<div class="col-lg-4">
+				<div>
+					
+				</div>
+			</div>
+		</div>
+		</div>
+
+
+
+		</body>
+		</html> 

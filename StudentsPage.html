@@ -1,0 +1,343 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+		<link rel="stylesheet" href="../static/noticecomment.css">
+	<link rel="stylesheet" href="../static/Bootstrap/bootstrap.min.css" >
+	<link rel="stylesheet" href="../static/Bootstrap.edit.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	
+	<script>
+		$(document).ready(function() {
+
+			$( ".navbar-nav .nav-item" ).on("click", function() {
+				$( ".navbar-nav .nav-item" ).removeClass( "active" );
+				$(this).addClass( "active" );
+			});
+
+
+		});
+	</script>
+	
+</head>
+<body>
+
+	<div class="nav-scroller">
+		{% include "nav.html"%}
+	</div>
+	
+		{% if success_msg %}
+                <div class="alert alert-success">{{ success_msg }}</div>
+        {% endif %}
+	
+	<div class="container ">
+		
+		<div class="row mb-2">
+			<div class="col-lg-8">
+				<ul class="nav nav-tabs mb-3">
+					<li class="nav-item">
+						<a class="nav-link active" data-toggle="tab" href="#notice">Notice</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link " data-toggle="tab" href="#Add_grievances">Add Grievances</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" data-toggle="tab" href="#Rate_grievances">Rate Grievances</a>
+					</li>
+				</ul>
+
+				<!-- Tab panes -->
+
+				<div class="tab-content">
+					<div class="tab-pane container active px-0" id="notice">
+						<div>
+							<div class="container px-0">
+								
+							</div>
+            
+
+                                 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+
+													<div class="container">
+	
+														<h2 class="text-center">News Feed</h2>
+	
+														<div class="card">
+	    													<div class="card-body">
+
+	      														  <div class="row">
+      
+  	    																<div class="col-md-2">
+        	    
+    																	<img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid"/>
+
+          																	 
+ 	                	    											</div>
+        	    													<div class="col-md-10">
+        	   																			
+     																	<p>
+        	   														         <a class="float-left" href="#grievances">
+																				<strong>Student's Grievances</strong></a>
+        	        
+    																			
+
+        
+	      																 </p>
+        	
+       																<div class="clearfix"></div>
+      
+  	      															<p>Today in our python class due to weak internet connection we are not being able to  perform our giben task. Due to which our course is not going as effective as it could be.Hope this would be taken into consideration!!!
+  	      															 BIM 6th sem </p>
+        	
+        	
+        															<p>
+        	           
+ 																		
+ 																		
+        	           													 <a class="float-right btn text-white btn-danger"> <i class="fa fa-heart"></i> Like</a>
+        	       													</p>
+        	    													</div>
+	        													</div>
+	        	<div class="card card-inner">
+            	    <div class="card-body">
+            	        <div class="row">
+                    	    <div class="col-md-2">
+                    	        <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid"/>
+                    	        
+                    	    </div>
+                    	    <div class="col-md-10">
+                    	        <p><a href="#grievances"><strong>RD Thapa</strong></a></p>
+                    	        <p>Today in our Laravel class due to weak internet connection we are not being able to  perform our giben task. Due to which our course is not going as effective as it could be.Hope this would be taken into consideration!!!
+  	      															 BIM 2nd sem </p>
+                    	            
+                    	            <a class="float-right btn text-white btn-danger"> <i class="fa fa-heart"></i> Like</a>
+                    	       </p>
+                    	    </div>
+            	        </div>
+            	    </div>
+	            </div>
+	    </div>
+	</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="tab-pane container fade" id="Add_grievances">
+						<div>
+							<div class="container px-0">
+								
+							</div>
+            
+
+                                 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+
+													<div class="container">
+	
+														<h2 class="text-center">Student's Grievances</h2>
+	
+														<div class="card">
+	    													<div class="card-body">
+
+	      														  <div class="row">
+      
+  	    																<div class="col-md-2">
+        	    
+    																	<img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid"/>
+
+          																	 
+                                                                             <p class="text-secondary text-center">Sita Kumari</p>
+ 	       																	 <p class="text-secondary text-center">Reg.No:2378</p>
+ 	                	    											</div>
+        	    													<div class="col-md-10">
+        	   																			
+     																	<p>
+        	   														         
+        	   														         <input type="text-warning" name="Title" placeholder="title...">
+        	   														  																				
+        	       
+
+        
+	      																 </p>
+        	
+       																<div class="clearfix"></div>
+      
+  	      															 <div class="form-group shadow-textarea">
+  																		
+  																			<textarea class="form-control z-depth-1" id="exampleFormControlTextarea6" rows="3" placeholder="Write something here..."></textarea>
+																	</div>
+        	
+        															<p>
+        	           
+ 																		<a class="float-right btn btn-outline-primary ml-2">
+ 																		<i class="fa fa-reply"></i> Edit</a>
+        	           													 <a class="float-right btn text-white btn-danger"> <i class="fa fa-heart"></i> Post</a>
+        	       													</p>
+        	    													</div>
+	        													</div>
+	        	
+		    											</div>
+													</div>
+					</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+					
+
+
+
+
+					<div class="tab-pane container fade" id="Rate_grievances">
+						<div>
+							<div class="container px-0">
+								
+							</div>
+            
+
+                                 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+
+													<div class="container">
+	
+														<h2 class="text-center">Grievances</h2>
+	
+														<div class="card">
+	    													<div class="card-body">
+
+	      														  <div class="row">
+      
+  	    																<div class="col-md-2">
+        	    
+    																	<img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid"/>
+
+          																	 
+
+ 	       																	  
+ 	                	    											</div>
+        	    													<div class="col-md-10">
+        	   																			
+     																	<p>
+        	   														         <a class="float-left" href="#grievances">
+																				<strong>BIM 6th Semester</strong></a>
+        	        
+    																			
+<span class="float-right"><i class="text-warning fa fa-star"></i></span>
+                
+      																			  <span class="float-right"><i class="text-warning fa fa-star"></i></span>
+     
+   	            																	<span class="float-right"><i class="text-warning fa fa-star"></i></span>
+   
+     	          																		  <span class="float-right"><i class="text-warning fa fa-star"></i></span>
+        
+	      																 </p>
+        	
+       																<div class="clearfix"></div>
+      
+  	      															 <p>Today in our python class due to weak internet connection we are not being able to  perform our giben task. Due to which our course is not going as effective as it could be.Hope this would be taken into consideration!!!
+  	      															 BIM 6th sem </p>
+
+        	
+        															<p>
+        	           																
+ 																		       	           																															
+        	           													 <a class="float-right btn text-white btn-danger"> <i class="fa fa-heart"></i> Approve</a>
+        	           													 <button type="button" class="btn-outline-primary">Report</button>
+        	           													
+        	       													</p>
+        	    													</div>
+        	    													<div class="container">
+  <h2>Approval Progress Bar</h2>
+  <p>Keep Approving</p> 
+  <div class="progress">
+    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="50" aria-valuemin="50" aria-valuemax="50" style="width:50%">
+      50%
+    </div>
+  </div>
+</div>
+	        													</div>
+	        	<div class="card card-inner">
+            	    <div class="card-body">
+            	        <div class="row">
+                    	    <div class="col-md-2">
+                    	        <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid"/>
+                    	        
+                    	    </div>
+                    	    <div class="col-md-10">
+                    	        <p><a href="#grievances"><strong>BIM 2nd Semester</strong></a></p>
+                    	        <p>Today in our Laravel class due to weak internet connection we are not being able to  perform our giben task. Due to which our course is not going as effective as it could be.Hope this would be taken into consideration!!!
+  	      															 BIM 2nd sem </p>
+                    	            
+																		
+
+																
+																			<p>
+ 																		
+        	           													 <a class="float-right btn text-white btn-danger"> <i class="fa fa-heart"></i> Approve</a>
+        	           													 <button type="button" class="btn-outline-primary">Report</button>
+        	           													 
+        	           
+
+                    	       </p>
+                    	    </div>
+                    	    <div class="container">
+  <h2>Approval Progress Bar</h2>
+  <p>Keep Approving</p> 
+  <div class="progress">
+    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+      40%
+    </div>
+  </div>
+</div>
+            	        </div>
+            	    </div>
+	            </div>
+	    </div>
+	</div>
+					
+					</div>
+			
+
+			<div class="col-lg-4">
+				<div>
+					
+				</div>
+			</div>
+		</div>
+		</div>
+
+
+
+		</body>
+		</html>
